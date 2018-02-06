@@ -1,5 +1,5 @@
 import random
-import sys
+from sys import sys.float_info.max
 
 
 def show(word):
