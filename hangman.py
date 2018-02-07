@@ -1,5 +1,5 @@
 import random
-from sys import float_info.max
+import sys
 
 
 def show(word):
@@ -116,7 +116,7 @@ def guessletter(guesses, words):
                 values[letter] += 1
     # gives the letters already found the value 0
     for letter in guesses:
-        values[letter] = float_info.max
+        values[letter] = sys.float_info.max
     n = len(words)
     # returns the letter wich appears the closest to half the words
     answer = min(values.keys(), key=lambda x: abs(values[x] - n / 2))
